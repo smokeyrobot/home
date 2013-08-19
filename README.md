@@ -1,0 +1,3 @@
+--These two projects are for Eclipse and should include any dependency for libgdx.  I will test later.
+   --B.A.D: core source that will be used to create native compilations
+   --B.A.D-desktop: contains main method for Desktop running game to debug core source
