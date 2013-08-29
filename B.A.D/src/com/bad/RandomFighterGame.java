@@ -1,5 +1,7 @@
 package com.bad;
 
+import com.bad.fighters.Sasquatch;
+import com.bad.screens.IntroSplashScreen;
 import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -17,14 +19,13 @@ public class RandomFighterGame extends Game {
 	@Override
 	public void create() {
 		Gdx.app.setLogLevel(Application.LOG_DEBUG);
-		SasquatchAssets.load();
 		introScreen = new IntroSplashScreen(this);
 		this.setScreen(introScreen);
 	}
 
 	@Override
 	public void dispose() {
-		SasquatchAssets.dispose();
+		Sasquatch.dispose();
 		introScreen.dispose();
 	}
 
