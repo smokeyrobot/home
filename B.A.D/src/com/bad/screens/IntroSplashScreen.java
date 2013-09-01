@@ -44,7 +44,7 @@ public class IntroSplashScreen extends GameScreen {
 	public void show() {
 		splash = new Texture(Gdx.files.internal("assets/splash_screen.png"));
 		batch = new SpriteBatch();
-		batch.getProjectionMatrix().setToOrtho2D(0, 0, RandomFighterGame.width, RandomFighterGame.height);
+		batch.getProjectionMatrix().setToOrtho2D(0, 0, RandomFighterGame.WIDTH, RandomFighterGame.HEIGHT);
 	}
 
 	@Override

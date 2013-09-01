@@ -12,8 +12,12 @@ import com.badlogic.gdx.Gdx;
  */
 public class RandomFighterGame extends Game {
 
-	public final static int height = 480;
-	public final static int width = 800;
+	public final static int HEIGHT = 480;
+	public final static int WIDTH = 800;
+	public final static int LEFT = -1;
+	public final static int RIGHT = 1;
+	public final static int UP = 1;
+	public final static int DOWN = -1;
 	public IntroSplashScreen introScreen;
 	
 	@Override

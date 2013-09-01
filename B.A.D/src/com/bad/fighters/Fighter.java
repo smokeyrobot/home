@@ -16,14 +16,16 @@ public class Fighter {
 	public static final int ACTION = 1;
 	
 	public int fighterState;
+	protected Vector2 position;
+	protected int velocity;
 	
 	private Rectangle hitBox;
 
-	public Fighter(float x, float y, float width, float height){
+	public Fighter(float x, float y, float width, float height, int velocity){
 		hitBox = new Rectangle(x, y, width, height);
 	}
 	
-	public Fighter(Vector2 coords, float width, float height){
+	public Fighter(Vector2 coords, float width, float height, int velocity){
 		hitBox = new Rectangle(coords.x, coords.y, width, height);
 	}
 	
@@ -38,6 +40,14 @@ public class Fighter {
 
 	public void setHitBox(Rectangle hitBox) {
 		this.hitBox = hitBox;
+	}
+
+	public Vector2 getPosition() {
+		return position;
+	}
+
+	public void setPosition(Vector2 position) {
+		this.position = position;
 	}
 
 }
